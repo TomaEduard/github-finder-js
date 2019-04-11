@@ -3,6 +3,7 @@ class UI {
     this.profile = document.getElementById('profile');
   }
 
+  // Display profile
   // https://api.github.com/users/TomaEduard
   showProfile(user) {
     this.profile.innerHTML = `
@@ -14,7 +15,7 @@ class UI {
             <a href="${user.html_url}" target="_blank" class="btn btn-outline-primary btn-block btn-sm mb-2">View Profiles</a>
         </div>
 
-        <div class="col-lg-9">
+        <div class="col-md-9">
 
           <span class="badge badge-primary p-2">Public Repos: ${user.public_repos}</span>
 
@@ -39,8 +40,39 @@ class UI {
     `;
 
   }
-}
 
-{
-  /* <span class="btn btn-warning"></span>Public Repos: ${user.public_repos}</span> */
+  showAlert(message, className) {
+    // Clear any remaining alert
+    this.clearAlert();
+
+    // Create div
+    const div = document.createElement('div');
+    // Add class
+    div.className = className;
+    // Add text
+    div.appendChild(document.createTextNode(message));
+    // Get parent
+    const container = document.querySelector('.searchContainer');
+    // Get search box
+    const search = document.querySelector('.search');
+    // Insert alert
+    container.insertBefore(div, search);
+
+    // Timeout after 3 sec
+    setTimeout(() => {
+      this.clearAlert();
+    }, 1800);
+  }
+
+  clearAlert() {
+    const currentAlert = document.querySelector('.alert');
+
+    if (currentAlert) {
+      currentAlert.remove();
+    }
+  }
+
+  clearProfile() {
+    this.profile.innerHTML = '';
+  }
 }
