@@ -11729,7 +11729,7 @@ a.text-dark:focus {
 }
 
 [class*="btn-outline-"] {
-  border-width: 2px
+  border-width: 1px
 }
 
 .border-secondary {
