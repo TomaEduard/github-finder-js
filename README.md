@@ -1,2 +1,1 @@
-"# finder-github-js-" 
-"# github-finder-js" 
+"# finder-github-js"
