@@ -57,8 +57,42 @@
 
   transform: translate(-80%, 0%);
 
-  opacity: 0.37;
+  opacity: 0.2;
   filter: alpha(opacity=50);
   background: no-repeat center cover;
   background-size: cover;
+
+}
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.padding-logos {
+  float: right;
+  padding-left: 150px;
+}
+
+
+.footer-last {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Footer  */
+.social-logo {
+  /* padding-left: 10px; */
+
+  opacity: 1;
+  filter: alpha(opacity=220);
+}
+
+.git-logo {
+  padding-top: 8px;
 }

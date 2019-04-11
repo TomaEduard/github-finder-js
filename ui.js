@@ -25,9 +25,9 @@ class UI {
               <li class="list-group-item">Website/Blog: ${user.blog}</li>
               <li class="list-group-item">Location: ${user.location}</li>
               <li class="list-group-item">Member Since: ${user.created_at}</li>
+              <br>
             </ul>
           </div>
-
         </div>
       </div>
       <h3 class="page-heading mb-3">Latest Repos</h3>
@@ -52,7 +52,6 @@ class UI {
             <span class="badge badge-secondary">Watchers: ${repo.watchers_count}</span>
             <span class="badge badge-secondary">Forks: ${repo.forms_count}</span>
             </div>
-            
           </div>
         </div>
       `;
