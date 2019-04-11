@@ -1,0 +1,64 @@
+.header a {
+  font-size: 34px;
+  padding-left: 128px;
+  /* padding-bottom: 55px; */
+
+  padding-top: 0px;
+  padding-bottom: 20px !important;
+  margin-bottom: 20px !important;
+
+  letter-spacing: .4em;
+  word-spacing: .3em;
+  font-weight: bold;
+}
+
+.size-finder {
+  font-weight: bold;
+  font-size: 34px;
+}
+
+.navbar-brand {
+  animation-name: anim;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+}
+
+.size-finder {
+  animation-name: anim;
+  animation-duration: 2s;
+  animation-delay: .5s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes anim {
+  0% {
+    transform: translateX();
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.navbar {
+  padding: 0px;
+  height: 97px;
+}
+
+.logo {
+  padding-left: 661px;
+
+  position: relative;
+
+  width: auto;
+  height: 40px;
+
+  transform: translate(-80%, 0%);
+
+  opacity: 0.37;
+  filter: alpha(opacity=50);
+  background: no-repeat center cover;
+  background-size: cover;
+}
