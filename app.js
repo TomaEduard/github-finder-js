@@ -10,14 +10,18 @@ searchUser.addEventListener('keyup', (e) => {
   const userText = e.target.value;
 
   if (userText !== '') {
+
     console.log(userText);
     // Make http call
     github.getUser(userText)
+
       .then(data => {
         console.log(data);
+
         if (data.profile.message === 'Not Found') {
           // Alert
           ui.showAlert('User not found !', 'alert alert-danger');
+
         } else {
           // Show profile
           ui.showProfile(data.profile);
